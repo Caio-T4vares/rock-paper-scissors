@@ -11,8 +11,10 @@ function getHumanChoice() {
   }
 }
 
-function getComputerChoice() {}
+function getComputerChoice() {
+  return weapons[generateRandomNumber()];
+}
 
 function generateRandomNumber() {
-  return Math.floor(Math.random() * weapons.lenght);
+  return Math.floor(Math.random() * weapons.length);
 }
