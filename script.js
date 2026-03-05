@@ -23,6 +23,15 @@ function playGame() {
   let humanScore = 0;
   let computerScore = 0;
 
+  for (let i = 0; i < 5; i++) {
+    console.log(`Round ${i + 1}`);
+    playRound();
+  }
+
+  console.log(`Final Result:
+    Human: ${humanScore}
+    Computer: ${computerScore}`);
+
   function playRound() {
     let humanChoice = getHumanChoice();
     let computerChoice = getComputerChoice();
