@@ -1,6 +1,8 @@
 let options = ["rock", "paper", "scissor"];
 let drawsCount = 0;
 
+playGame();
+
 function getHumanChoice() {
   let choice = prompt(`Choose your weapon (${options.join()}) :`).toLowerCase();
 
@@ -16,7 +18,7 @@ function getComputerChoice() {
 }
 
 function generateRandomNumber() {
-  return Math.floor(Math.random() * weapons.length);
+  return Math.floor(Math.random() * options.length);
 }
 
 function playGame() {
