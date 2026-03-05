@@ -10,3 +10,9 @@ function getHumanChoice() {
     alert("Invalid option, please choose again.");
   }
 }
+
+function getComputerChoice() {}
+
+function generateRandomNumber() {
+  return Math.floor(Math.random() * weapons.lenght);
+}
