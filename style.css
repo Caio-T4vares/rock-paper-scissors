@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+}
+
+.option-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.score {
+  font-size: 192px;
+}
+
+#divider {
+  font-size: 48px;
+}
+
+#human-scoreboard,
+#computer-scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

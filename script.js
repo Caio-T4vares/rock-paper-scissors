@@ -3,7 +3,10 @@ let drawsCount = 0;
 let computerScore = 0;
 let humanScore = 0;
 
-let buttonContainer = document.querySelector(".container");
+let buttonContainer = document.querySelector(".option-container");
+let resultDiv = document.querySelector("#result");
+let humanScoreboard = document.querySelector("#human-score");
+let computerScoreboard = document.querySelector("#computer-score");
 
 buttonContainer.addEventListener("click", (e) => {
   playRound(e.target.id);
@@ -56,4 +59,7 @@ function playRound(humanChoice) {
       drawsCount++;
     }
   }
+
+  computerScoreboard.textContent = computerScore;
+  humanScoreboard.textContent = humanScore;
 }
