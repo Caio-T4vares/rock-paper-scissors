@@ -1,5 +1,5 @@
 body {
-  background-image: url("./assets/img/paper.jpg");
+  background-image: url("./assets/img/paper-bg.jpg");
 }
 
 .option-container {
@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  gap: 18px;
+  gap: 72px;
 }
 
 .main-container {
@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 12px;
 }
 
 .score {
@@ -38,4 +38,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+img {
+  height: 200px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 16px 8px;
+}
+
+button:hover {
+  border: 1px solid black;
 }

@@ -12,8 +12,6 @@ buttonContainer.addEventListener("click", (e) => {
   playRound(e.target.id);
 });
 
-chooseButtons.addEventListener;
-
 function getComputerChoice() {
   return options[generateRandomNumber()];
 }
@@ -24,6 +22,8 @@ function generateRandomNumber() {
 
 function playRound(humanChoice) {
   let computerChoice = getComputerChoice();
+
+  console.log(humanChoice, computerChoice);
 
   if (humanChoice === "rock") {
     if (computerChoice === "paper") {
