@@ -1,15 +1,15 @@
 let options = ["rock", "paper", "scissor"];
 let drawsCount = 0;
+let computerScore = 0;
+let humanScore = 0;
 
-function getHumanChoice() {
-  let choice = prompt(`Choose your weapon (${options.join()}) :`).toLowerCase();
+let buttonContainer = document.querySelector(".container");
 
-  if (!options.includes(choice)) {
-    console.log("Invalid option, please choose again.");
-    return;
-  }
-  return choice;
-}
+buttonContainer.addEventListener("click", (e) => {
+  playRound(e.target.id);
+});
+
+chooseButtons.addEventListener;
 
 function getComputerChoice() {
   return options[generateRandomNumber()];
@@ -19,8 +19,7 @@ function generateRandomNumber() {
   return Math.floor(Math.random() * options.length);
 }
 
-function playRound() {
-  let humanChoice = getHumanChoice();
+function playRound(humanChoice) {
   let computerChoice = getComputerChoice();
 
   if (humanChoice === "rock") {
