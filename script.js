@@ -45,7 +45,7 @@ function playRound(humanChoice) {
     if (computerChoice === "rock") {
       computerScore++;
     } else if (computerChoice === "paper") {
-      computerScore++;
+      humanScore++;
     } else {
       drawsCount++;
     }
